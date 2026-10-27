@@ -51,7 +51,6 @@ and light computing tasks.
 
 ## Problems Computers Solve
 
-````markdown
   Computers are essential tools that solve a wide range of problems:
 
 - **Complex calculations** : Perform millions of calculations per second that would take humans much longer.
@@ -65,7 +64,6 @@ and light computing tasks.
 - **Research and development** : Assist in scientific simulations, medical research, and technological innovation.
 
 - **Entertainment and creativity** : Support video editing, gaming, digital art, and virtual reality experiences.
-````
 
 ## Computer Protocols
 
