@@ -46,7 +46,7 @@ Intel is one of the largest CPU manufacturers, producing processors for desktops
 
 - i9: Enthusiast/professional, 8–16 cores, streaming, rendering, AI workloads.
 
-##Intel Core Ultra Series (latest hybrid CPUs)
+## Intel Core Ultra Series (latest hybrid CPUs)
 
 - Core Ultra 5: 5-core hybrid design, efficient for multitasking.
   
@@ -92,3 +92,28 @@ Intel is one of the largest CPU manufacturers, producing processors for desktops
 
 - Optimized for data centers, high core counts, virtualization, ECC memory, energy efficiency.
 Press enter or click to view image in full size
+
+## AMD Generations and Features
+
+- Zen, Zen+, Zen 2: Major IPC improvements, lower power consumption, increased cores.
+
+- Zen 3: Large single-core IPC boost, gaming improvements, lower latency cache.
+
+- Zen 4: DDR5 support, PCIe 5.0, higher clock speeds, improved energy efficiency.
+
+- Threadripper/EPYC: High-core and thread count, multi-socket support, professional workloads.
+
+## CPU Performance Factors
+
+- Clock speed (GHz)
+
+- Number of cores and threads
+
+- Cache size (L1, L2, L3)
+
+- Instruction sets (SSE, AVX, AI instructions)
+
+- TDP (Thermal Design Power)
+
+This guide provides a complete overview of CPUs, from history and operation to types, performance benefits, and manufacturers. 
+CPUs are essential for efficient, high-performance, and reliable computing.
