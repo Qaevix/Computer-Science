@@ -62,9 +62,20 @@ and light computing tasks.
 
 ## Computer Protocols
 
-````markdown
   A protocol is a set of rules that allows computers to communicate networks. Common protocols include:
 
-- ** TCP
+- **TCP / IP (Transmission Control Protocol / Internet Protocol):** Foundation of the Internet, ensure data is sent and received correctly.
+
+- **HTTP/HTTPS (Hyper Text Transfer Protocol / Secure):** For web browsing; HTPPS is secure version.
+
+- **FTP (File Transfer Protocol):** For transfering files between computers.
+
+- **SMTP / IMAP / POP3:** For sending and receiving emails.
+
+- **DNS (Domain Name System):** Converts names into IP addresses.
+
+- **DHCP (Dynamic Host Configuration Protocol):** Automatically assigns IP addresses to devices.
+
+  
 
 
