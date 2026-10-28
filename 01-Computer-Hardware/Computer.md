@@ -74,7 +74,7 @@ and light computing tasks.
 
 - **DNS (Domain Name System):** Converts names into IP addresses.
 
-- **DHCP (Dynamic Host Configuration Protocol):** Automatically assigns IP addresses to devices.
+- **DHCP (Dynamic Host Configuration Protocol):** Automatically assigns IP addresses to devices
 
   
 
