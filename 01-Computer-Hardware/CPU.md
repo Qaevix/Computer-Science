@@ -3,7 +3,7 @@
 ## Central Processing Unit (CPU) — Definition, History, and Importance
 
 The CPU is the “brain” of a computer. It executes instructions, performs calculations, and manages data flow between memory, 
-storage, and peripherals. Without a CPU, a computer cannot function. Modern CPUs vary in core count, clock speed, cache size, 
+storage, and peripherals. Without a CPU, a computer cannot function. Modern CPUs vary in core count, clock speed, cache size
 and instruction sets to handle everything from light web browsing to AI workloads.
 
 ## History of CPU
