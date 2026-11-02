@@ -68,3 +68,49 @@ processes simultaneously.
 ## Major Manufacturers & Architectures 
 
 ### NVIDIA
+
+- **GeForce GTX series (performance gaming)**
+
+- **RTX series** (20, 30, 40) with Ray Tracing + DLSS (AI upscaling)
+
+- **CUDA cores & Tensor Cores** dominate AI & machine learning.
+
+- **Data Center:** A100, H100 (Hopper architecture) leading AI revoulation.
+
+### AMD
+
+- **Radeon RX series (gaming)**
+
+- **RDNA** (gaming) & **CDNA** (data center) architectures.
+
+- **FSR** (FidelityFX Super Resolution) competing with DLSS.
+
+- **Instinct series** for AI/HPC with HBM memory.
+
+### Intel
+
+- **ARC GPUs** (entry to mid-range gaming).
+
+- **Integrated GPUs in Intel Core & Core Ultra series.
+
+- Focusing on **XE** architecture for  AI + HPC.
+
+## Generations & Innovations
+
+### NVIDIA:
+
+- Kepler -> Maxwell -> Pascal -> Turing -> Ampere -> Ada -> Lovelace -> Hopper.
+
+- Introduced Ray Tracing (RTX 20 series) and DLSS (Deep Learning Super Sampling).
+
+- RTX 40 series (Ada Lovelace): improved ray tracing + DLSS 3 Frame Generation.
+
+### AMD: 
+
+- GCN -> RDNA -> RDNA 2 -> RDNA 3.
+
+- Pioneered chiplet desing (RDNA 3) for efficincy.
+
+- Infinity Cache boost memory bandwidth.
+
+
