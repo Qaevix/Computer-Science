@@ -113,4 +113,18 @@ processes simultaneously.
 
 - Infinity Cache boost memory bandwidth.
 
+### Intel:
 
+- Still new, but Arch Alchemist (A-series) shows potential.
+
+## GPU vs CPU
+
+- **CPU:** General-purpose, sequential tasks, 4-24 cores (desktop).
+
+- **GPU:** Specialized, parallel tasks, 1000s of cores
+
+**Example:** Training a large AI model may take weeks on CPUs, but only days on GPUs.
+
+## Importance of GPU
+
+- Gaming: High-resolution
