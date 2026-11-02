@@ -128,4 +128,10 @@ processes simultaneously.
 ## Importance of GPU
 
 - Gaming: High-resolution, ray-traced visuals.
-- AI & Machine Learning: Training
+- AI & Machine Learning: Training LLMs (like Chat GPT) depends heavily on GPUs.
+- Cryptocurrency Mining: Parallelism makes GPUs ideal for hashing algorithms.
+- Scientific Research & HPC: Protein folding, weather simulations, space exploration.
+- Content Creation: Video editing, 3D modeling, visual effects (VFX).
+
+ ## Future of GPU
+- 
