@@ -1,9 +1,10 @@
 # What is RAM?
 
-Definition of RAM
-RAM (Random Access Memory) is a type of volatile computer memory that provides temporary storage for data and instructions 
-currently being used by the CPU. Unlike hard drives or SSDs, RAM is designed for speed rather than long-term storage. 
-When the power is turned off, the data in RAM is lost, which makes it different from permanent storage solutions.
+**Definition of RAM:**
+ RAM (Random Access Memory) is a type of volatile computer memory that provides temporary storage for data and 
+instructions currently being used by the CPU. Unlike hard drives or SSDs, RAM is designed for speed rather than 
+long-term storage. When the power is turned off, the data in RAM is lost, which makes it different from permanent 
+storage solutions.
 
 In simple terms, RAM acts as the workspace of the computer, where programs and processes are loaded for fast access.
 
