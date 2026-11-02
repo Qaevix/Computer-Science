@@ -127,4 +127,5 @@ processes simultaneously.
 
 ## Importance of GPU
 
-- Gaming: High-resolution
+- Gaming: High-resolution, ray-traced visuals.
+- AI & Machine Learning: Training
