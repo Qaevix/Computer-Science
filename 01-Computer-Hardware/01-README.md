@@ -34,7 +34,7 @@ This section explores **what each piece of hardware does**, **how it works**, an
 
 ## 🧭 Suggested Reading Order
 
-1. **Computer** — Start with the basic structure and functions of a computer.
+1. **Computer** — Start with the basic structure and functions of a computer. ✅
 2. **CPU** — Understand how instructions are processed.
 3. **GPU** — Explore graphics and parallel processing.
 4. **RAM** — Learn how running programs use working memory.
