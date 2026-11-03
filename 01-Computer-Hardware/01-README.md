@@ -60,7 +60,7 @@ This section explores **what each piece of hardware does**, **how it works**, an
 ├── Motherboard.md ✅
 ├── PSU.md ❌
 ├── SSD-HDD.md ❌
-├── Server.md
+├── Server.md ❌
 ├── Switch.md
 ├── Router.md
 └── Access-Point.md
