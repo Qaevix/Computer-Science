@@ -62,7 +62,7 @@ This section explores **what each piece of hardware does**, **how it works**, an
 ├── SSD-HDD.md ❌
 ├── Server.md ❌
 ├── Switch.md ❌
-├── Router.md
+├── Router.md ❌
 └── Access-Point.md
 ```
 
