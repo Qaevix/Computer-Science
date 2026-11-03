@@ -57,7 +57,7 @@ This section explores **what each piece of hardware does**, **how it works**, an
 ├── CPU-Modes.md 
 ├── GPU.md ✅
 ├── RAM.md ✅
-├── Motherboard.md
+├── Motherboard.md ✅
 ├── PSU.md
 ├── SSD-HDD.md
 ├── Server.md
