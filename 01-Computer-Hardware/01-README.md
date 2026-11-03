@@ -54,7 +54,7 @@ This section explores **what each piece of hardware does**, **how it works**, an
 ├── README.md ✅
 ├── Computer.md ✅
 ├── CPU.md ✅
-├── CPU-Modes.md 
+├── CPU-Modes.md ❌
 ├── GPU.md ✅
 ├── RAM.md ✅
 ├── Motherboard.md ✅
