@@ -12,7 +12,7 @@ This repository documents my learning journey and connects theoretical concepts 
 
 | Section | Topics |
 | :--- | :--- |
-| 🖥️ **01 · Computer Hardware** | Computer components, CPU modes, memory, storage, and server hardware |
+| 🖥️ **01 · Computer Hardwares** | Computer components, CPU modes, memory, storage, and server hardware |
 | 📡 **02 · Computer Networks** | Networking devices, protocols, addressing, routing, switching, and Packet Tracer labs |
 | 🔢 **03 · Digital Logic** | Number systems, binary arithmetic, Boolean algebra, and logic gates |
 | 🏗️ **04 · Computer Architecture** | Instruction sets, registers, instruction execution, pipelining, and memory hierarchy |
