@@ -1,312 +1,372 @@
-# 🧠 What Is a CPU?
+# 🎮 What Is a GPU?
 
-> The Central Processing Unit executes program instructions and performs the operations that drive a computer's general-purpose workloads.
+> A Graphics Processing Unit accelerates graphics and other workloads that benefit from processing many operations in parallel.
 
-## 📖 Definition of a CPU
+## 📖 Definition of a GPU
 
-The **CPU (Central Processing Unit)** is a processor that executes instructions, performs arithmetic and logical operations, and coordinates program execution.
+A **GPU (Graphics Processing Unit)** is a processor designed for high-throughput parallel computation.
 
-It works with **registers, caches, RAM, and other hardware** to process data.
+GPUs are widely used to render images, animations, and video. They also accelerate suitable workloads in:
 
-A CPU's capabilities depend on its architecture, core count, clock speed, cache design, supported instructions, and power limits.
+- **Artificial intelligence and machine learning**
+- **Scientific computing**
+- **Data processing**
+- **3D rendering**
+- **Image and video processing**
 
-> 💡 The CPU is often called the computer's “brain.” More precisely, it is an instruction-processing engine that works alongside memory, storage, and specialized processors.
+GPUs achieve high throughput by executing many operations concurrently across large amounts of data.
 
----
+> 💡 A GPU is especially useful when a problem can be divided into many similar operations. It does not automatically make every program faster.
 
-## ⚙️ How a CPU Works
+### GPU vs. Graphics Card
 
-A simplified instruction cycle has three stages:
+These terms are related but have different meanings:
 
-1. **Fetch** — Retrieve an instruction from memory, usually through the cache hierarchy.
-2. **Decode** — Interpret the instruction and determine the required operation.
-3. **Execute** — Perform the operation and store its result where required.
+- **GPU** — The processor itself.
+- **Graphics card** — A board containing a GPU and supporting components such as memory, power-delivery circuitry, cooling, and display connections.
 
-```text
-Fetch → Decode → Execute
-  ▲                 │
-  └─────────────────┘
-```
-
-Modern CPUs overlap and reorganize many operations internally to improve performance while preserving the behavior required by the program.
-
-### Main CPU Components
-
-| Component | Purpose |
-| :--- | :--- |
-| **Control Logic** | Coordinates instruction processing and internal operations |
-| **ALU** | Performs arithmetic and logical operations |
-| **Registers** | Hold small amounts of immediately needed data and execution state |
-| **Cache** | Keeps copies of data and instructions close to processing cores |
-| **Execution Units** | Perform operations such as integer, floating-point, and vector calculations |
-| **Memory Interface** | Connects the processor to the memory system |
+Integrated GPUs are part of a processor package or system design and do not require a separate graphics card.
 
 ---
 
-## 🕰️ History of CPUs
+## 🕰️ History of GPUs
 
 | Period | Development |
 | :--- | :--- |
-| **1940s–1950s** | Early electronic computers used vacuum-tube processing circuits. |
-| **1950s–1960s** | Transistors and integrated circuits helped reduce size and improve reliability. |
-| **1970s** | Microprocessors brought CPU functionality onto a single chip. |
-| **1980s–1990s** | Personal computing expanded alongside advances in processor architecture, caches, and instruction execution. |
-| **2000s** | Multicore processors became increasingly common in personal computers. |
-| **Later Developments** | Greater parallelism, improved energy efficiency, specialized instructions, and heterogeneous designs expanded CPU capabilities. |
+| **1980s–1990s** | Graphics hardware increasingly accelerated display operations, followed by more advanced 2D and 3D rendering. |
+| **Late 1990s** | Consumer graphics hardware integrated more stages of the 3D graphics pipeline. |
+| **2000s** | Programmable shaders expanded what graphics processors could do. General-purpose GPU computing also developed. |
+| **2010s** | GPU computing became increasingly important in deep learning, scientific research, and large-scale data processing. |
+| **Later Developments** | Specialized hardware expanded acceleration for ray tracing, matrix operations, and media processing. |
+
+Graphics rendering and general-purpose computation remain important parts of GPU development.
 
 ---
 
-## ⭐ Why CPUs Matter
+## ⚙️ How a GPU Works
 
-### Everyday Computing
+Many workloads apply similar calculations to large collections of data.
 
-CPUs execute operating-system code and application logic for browsing, office work, and other tasks.
+For example:
 
-### Gaming
+- Calculating colors for many pixels
+- Transforming vertices in a 3D scene
+- Performing matrix operations
+- Applying an image filter
+- Updating elements in a scientific simulation
 
-Game engines use CPU resources for tasks such as:
-
-- Game logic
-- Physics
-- Artificial intelligence
-- Preparing rendering work
-- Coordinating background operations
-
-The effect on performance depends on the game, graphics settings, and the rest of the system.
-
-### Content Creation and Development
-
-Compilation, rendering, media processing, and other workloads can benefit from CPU performance.
-
-Some tasks scale across many cores, while others depend heavily on a smaller number of fast cores.
-
-### Servers
-
-Server CPUs support workloads such as databases, web applications, virtualization, and data processing.
-
-### Mobile and Embedded Devices
-
-Energy-efficient processors balance responsiveness, heat, and battery life.
-
----
-
-## 🧩 Cores, Threads, and Clock Speed
-
-### CPU Cores
-
-A **core** is a processing unit within a CPU that can execute instructions.
-
-Multiple cores allow work to run in parallel when the software supports it.
-
-### Hardware Threads
-
-Some cores support **simultaneous multithreading (SMT)**, allowing more than one hardware thread to share a core's execution resources.
-
-**Hyper-Threading** is Intel's name for its SMT technology on supported processors.
-
-> 📌 Two hardware threads on one core do not provide the same resources as two separate cores.
-
-### Clock Speed
-
-Clock speed measures clock cycles per second and is commonly expressed in **GHz**.
-
-It does not directly tell you how many program instructions a CPU completes each second.
-
-### Instructions Per Cycle
-
-**IPC (Instructions Per Cycle)** describes how many instructions a processor completes per clock cycle for a particular workload.
-
-Clock speed and IPC both matter, but neither provides a complete performance comparison by itself.
-
----
-
-## 🏭 CPU Families and Manufacturers
-
-Intel and AMD are important suppliers of desktop, laptop, workstation, and server processors.
-
-The broader processor ecosystem also includes Arm-based processors and other architectures used in mobile devices, embedded systems, and servers.
-
-### Intel Processor Families
-
-| Family | General Positioning |
-| :--- | :--- |
-| **Core i3 / i5 / i7 / i9** | Product tiers used across multiple generations of consumer processors |
-| **Core / Core Ultra** | Consumer processor families with capabilities that vary by model and platform |
-| **Xeon** | Processors intended for server and workstation workloads |
-
-### Understanding Intel Product Tiers
-
-Numbers such as **5, 7, and 9** identify product tiers within a naming scheme.
-
-They do **not** specify the number of CPU cores.
-
-Core counts, thread counts, integrated graphics, and other features must be checked for the exact processor model.
-
-### AMD Processor Families
-
-| Family | General Positioning |
-| :--- | :--- |
-| **Ryzen 3 / 5 / 7 / 9** | Consumer product tiers covering different workloads and price ranges |
-| **Ryzen Threadripper** | High-end desktop and workstation workloads |
-| **EPYC** | Server and data-center workloads |
-
-### Understanding AMD Product Tiers
-
-Ryzen tier numbers do not guarantee a fixed core count.
-
-Specifications vary between generations, desktop and mobile models, and individual products.
-
-> 💡 Compare exact models using relevant specifications and workload benchmarks. A product-family label alone is not a performance measurement.
-
----
-
-## 🏗️ CPU Architecture Concepts
-
-### Instruction Set Architecture
-
-An **ISA (Instruction Set Architecture)** defines the instructions and architectural behavior available to software.
-
-Examples include:
-
-- **x86-64**
-- **Arm instruction sets**
-- **RISC-V**
-
-### Microarchitecture
-
-A **microarchitecture** is the internal design used to implement an ISA.
-
-Processors can support the same ISA while differing significantly in performance, efficiency, and internal organization.
-
-### Homogeneous and Heterogeneous Designs
-
-- **Homogeneous designs** use cores with broadly similar capabilities.
-- **Heterogeneous designs** combine different core types to balance performance, efficiency, or specialized requirements.
-
-Support and behavior depend on the processor and operating system.
-
----
-
-## 📊 CPU Performance Factors
-
-| Factor | Why It Matters |
-| :--- | :--- |
-| **Core Count** | Affects how much work can run in parallel |
-| **Thread Support** | Can improve utilization of a core's resources |
-| **Clock Speed** | Influences the rate of internal processing cycles |
-| **Microarchitecture and IPC** | Affect the work completed per cycle |
-| **Cache** | Can reduce the need to access slower memory |
-| **Memory Performance** | Affects how quickly data reaches the processor |
-| **Instruction Support** | Enables operations that some applications can use efficiently |
-| **Power and Cooling** | Influence sustained operating speeds |
-| **Software Design** | Determines how effectively hardware resources are used |
-
-### Single-Thread Performance
-
-Important for workloads with limited parallelism or a critical sequential path.
-
-### Multithread Performance
-
-Important for workloads that can distribute useful work across multiple cores and threads.
-
-> 📌 More cores do not automatically make every application faster.
-
----
-
-## 🗂️ CPU Cache
-
-Cache stores copies of instructions and data to reduce average access time.
-
-Common cache levels include:
-
-- **L1** — Small and close to a core's execution resources
-- **L2** — Typically larger than L1
-- **L3** — Often shared among multiple cores
-
-Exact arrangements vary by processor.
+A GPU schedules many groups of threads across its execution resources.
 
 ```text
-Registers → L1 Cache → L2 Cache → L3 Cache → RAM
+Large Workload
+      │
+      ▼
+Many Smaller Operations
+      │
+      ▼
+Parallel GPU Execution
+      │
+      ▼
+Results
 ```
 
-This is a simplified view. Cache sharing, sizes, and access paths depend on the architecture.
+Actual execution depends on the architecture, available resources, memory access patterns, and program behavior.
+
+### Throughput and Latency
+
+- **Throughput** describes how much work is completed over time.
+- **Latency** describes how long an individual operation takes.
+
+GPU designs emphasize high throughput. Workloads with limited parallelism, frequent branching, or substantial communication overhead may benefit less.
 
 ---
 
-## 🌡️ Power, Heat, and Cooling
+## 🧩 Main GPU Components
 
-CPUs consume electrical power and generate heat.
+| Component | Purpose |
+| :--- | :--- |
+| **Compute / Shader Units** | Execute graphics and general-purpose calculations |
+| **Registers** | Hold data needed by active threads |
+| **Caches and Local Memory Resources** | Reduce costly accesses to external memory |
+| **Memory Controllers** | Transfer data between the GPU and its memory |
+| **Texture Units** | Support texture sampling and related graphics operations |
+| **Rasterization Hardware** | Converts geometric primitives into fragments for further processing |
+| **Specialized Accelerators** | Accelerate supported operations such as ray traversal or matrix calculations |
+| **Media Engines** | Encode or decode supported video formats |
 
-If temperature or power limits are reached, the processor may reduce its operating speed. Temperature-driven reductions are commonly called **thermal throttling**.
+The exact components and terminology vary by GPU architecture.
 
-### TDP
+### What Is a Shader?
 
-**TDP (Thermal Design Power)** is a thermal-design specification whose definition varies by manufacturer and product.
+A **shader** is a program executed by the GPU.
 
-It is not a universal measure of maximum electrical power consumption.
+Shaders can perform tasks such as:
 
-### Sustained Performance
+- Transforming vertices
+- Calculating surface appearance
+- Processing pixels or fragments
+- Running general compute operations
 
-Long-running workloads depend on:
+> 📌 A shader is software. Shader execution units are the hardware resources that run it.
 
-- Cooling capacity
-- Motherboard power delivery
-- Processor power settings
-- Ambient temperature
-- Workload characteristics
+### Specialized Acceleration
 
-A brief boost frequency does not guarantee that the same frequency can be maintained indefinitely.
+Some GPUs include hardware for:
+
+- **Ray tracing operations**, such as traversal and intersection tests
+- **Matrix operations**, useful in machine learning and other numerical workloads
+- **Video encoding and decoding**
+
+Feature availability and supported operations depend on the specific GPU.
 
 ---
 
-## ⚖️ CPU vs. GPU
+## 🗂️ GPU Memory
+
+GPUs need fast access to instructions, geometry, textures, intermediate results, and other data.
+
+### Dedicated Graphics Memory
+
+Discrete GPUs commonly use dedicated memory technologies such as:
+
+- **GDDR**
+- **HBM — High Bandwidth Memory**
+
+The appropriate technology depends on the product and its intended workload.
+
+### Shared System Memory
+
+Integrated GPUs typically use system memory shared with the CPU.
+
+Some systems provide a unified memory architecture in which processors access a common memory pool.
+
+### Capacity vs. Bandwidth
+
+| Specification | Meaning |
+| :--- | :--- |
+| **Memory Capacity** | How much data can fit in GPU-accessible memory |
+| **Memory Bandwidth** | How much data can be transferred per second |
+| **Memory Latency** | How long a memory access takes |
+
+> 💡 More VRAM does not automatically mean a faster GPU. It is useful when a workload needs the additional capacity.
+
+---
+
+## 🖥️ GPU Integration Types
+
+### Integrated GPU — iGPU
+
+An integrated GPU is incorporated into a processor or system design.
+
+Typical characteristics include:
+
+- Shared system memory
+- Compact integration
+- Suitability for power-constrained systems
+- Performance that varies substantially by implementation
+
+Integrated GPUs can support everyday graphics, media processing, gaming, and compute workloads within their capabilities.
+
+### Discrete GPU — dGPU
+
+A discrete GPU is a separate processor, often installed on a graphics card or built into a laptop motherboard.
+
+Typical characteristics include:
+
+- Dedicated graphics memory
+- Independent power and cooling requirements
+- A wide range of performance levels
+- Use in gaming, content creation, and compute systems
+
+---
+
+## 🏢 GPU Workload Categories
+
+These categories describe intended uses and can overlap.
+
+| Category | Common Priorities |
+| :--- | :--- |
+| **Consumer / Gaming** | Interactive graphics, display features, and game performance |
+| **Professional / Workstation** | Application support, driver validation, reliability, and professional workflows |
+| **Data Center / Compute** | Compute throughput, memory capacity, interconnects, and large-scale operation |
+| **Embedded / Mobile** | Energy efficiency, integration, and device-specific requirements |
+
+A workstation or data-center GPU is not simply a gaming GPU with a different label. Product capabilities, software support, and operating requirements may differ.
+
+---
+
+## 🏭 GPU Vendors and Architecture Names
+
+Examples of GPU developers include **NVIDIA, AMD, and Intel**. Other companies also develop integrated graphics for mobile and other systems.
+
+Architecture names identify design families rather than universal performance rankings.
+
+| Developer | Architecture Examples |
+| :--- | :--- |
+| **NVIDIA** | Kepler, Maxwell, Pascal, Turing, Ampere, Ada Lovelace, Hopper |
+| **AMD** | GCN, RDNA families, CDNA families |
+| **Intel** | Xe architecture families |
+
+These examples are not a complete release history. Consumer and data-center designs can follow different product paths.
+
+> 📌 **Ada Lovelace is one architecture name.** GPU architectures should not be treated as a single sequence covering every product category.
+
+### Comparing Execution-Unit Counts
+
+Terms such as **CUDA cores**, **stream processors**, and **execution units** describe resources within particular designs.
+
+Their counts are not directly interchangeable across vendors or architectures.
+
+---
+
+## 🖼️ A Simplified Graphics Pipeline
+
+A typical rasterization-based rendering process includes:
+
+1. **Geometry processing** — Transform objects and vertices.
+2. **Rasterization** — Determine which fragments are covered by geometric primitives.
+3. **Shading** — Calculate appearance using materials, textures, and lighting.
+4. **Output processing** — Apply operations such as depth testing and blending.
+5. **Presentation** — Make the completed image available for display.
+
+```text
+Geometry → Rasterization → Shading → Output → Display
+```
+
+This is a simplified overview. Real rendering systems may include additional stages and combine rasterization with ray tracing.
+
+### Ray Tracing
+
+Ray tracing calculates visibility and light interactions by tracing rays through a scene.
+
+Specialized GPU hardware can accelerate parts of this process, but final performance also depends on scene complexity and rendering software.
+
+### Upscaling and Frame Generation
+
+- **Upscaling** reconstructs a higher-resolution image from lower-resolution input and other available information.
+- **Frame generation** creates additional frames using information from rendered frames and related inputs.
+
+These techniques have different effects on image quality, responsiveness, and performance.
+
+---
+
+## ⚖️ GPU vs. CPU
 
 | Aspect | CPU | GPU |
 | :--- | :--- | :--- |
-| **Primary Strength** | General-purpose execution and complex control flow | High-throughput parallel processing |
-| **Design Emphasis** | Low-latency execution across varied tasks | Processing many operations concurrently |
-| **Typical Workloads** | Operating systems, application logic, and compilation | Graphics, suitable numerical workloads, and machine learning |
-| **Relationship** | Coordinates and executes general application work | Accelerates workloads suited to its architecture |
+| **Design Emphasis** | General-purpose execution and complex control flow | High-throughput parallel execution |
+| **Typical Strength** | Responsive execution across varied tasks | Similar operations across large datasets |
+| **Common Workloads** | Application logic, operating systems, and compilation | Graphics, matrix calculations, and suitable simulations |
+| **Parallelism** | Supports parallel execution across cores and other resources | Schedules large numbers of threads across compute resources |
 
-CPUs and GPUs work together. Their performance depends on the workload and how effectively software uses them.
+CPUs and GPUs work together. Both support parallelism, but their designs favor different workload characteristics.
+
+> 💡 GPU acceleration depends on the algorithm, implementation, data size, memory behavior, and communication overhead. There is no universal CPU-to-GPU speedup ratio.
 
 ---
 
-## 🔍 Reading CPU Specifications
+## ⭐ Where GPUs Are Used
 
-When comparing processors, consider:
+### Gaming
 
-- **Exact model and generation**
-- **Intended platform**
-- **Core and thread configuration**
-- **Performance in relevant applications**
-- **Memory and motherboard compatibility**
-- **Integrated graphics availability**
-- **Power requirements and cooling**
-- **Required instruction-set features**
+- Real-time rendering
+- Visual effects
+- Supported ray-tracing workloads
+- Image reconstruction and related techniques
 
-Avoid comparing processors using only clock speed, core count, or a product-tier number.
+### Artificial Intelligence and Machine Learning
+
+- Neural-network training
+- Model inference
+- Matrix and tensor operations
+
+### Scientific Computing
+
+- Numerical simulations
+- Molecular modeling
+- Weather and climate calculations
+- Other parallel research workloads
+
+### Content Creation
+
+- 3D rendering
+- Video effects
+- Image processing
+- Supported media encoding and decoding
+
+### Data Processing
+
+- Parallel analytics
+- Suitable database operations
+- Large-scale numerical computation
+
+The benefits depend on software support and workload suitability.
+
+---
+
+## 📊 GPU Performance Factors
+
+| Factor | Why It Matters |
+| :--- | :--- |
+| **Architecture** | Determines execution capabilities and resource organization |
+| **Compute Resources** | Affect throughput for supported operations |
+| **Clock Speed** | Influences operating frequency |
+| **Memory Capacity** | Determines how much workload data can remain in GPU memory |
+| **Memory Bandwidth** | Affects data transfer rates |
+| **Cache Design** | Can reduce external memory traffic |
+| **Numerical Precision Support** | Matters for different scientific and AI calculations |
+| **Power and Cooling** | Influence sustained performance |
+| **Software and Drivers** | Affect compatibility, efficiency, and available features |
+
+### Choosing Relevant Benchmarks
+
+Compare GPUs using workloads that match your needs:
+
+- Games at the intended resolution and settings
+- Rendering applications you use
+- Specific AI models and precision settings
+- Relevant scientific workloads
+- Required media formats
+
+A single specification cannot describe overall GPU performance.
+
+---
+
+## 🚀 Areas of Development
+
+GPU development continues to focus on:
+
+- Higher compute and memory throughput
+- Greater energy efficiency
+- Improved graphics and ray-tracing capabilities
+- Specialized matrix acceleration
+- Faster communication between processors
+- Better software tools and workload support
+- Advanced packaging and memory integration
+
+Progress depends on both hardware design and the software that uses it.
 
 ---
 
 ## ✅ Key Takeaways
 
-- The **CPU executes instructions** and performs general-purpose computation.
-- **Cores and hardware threads are different concepts.**
-- Clock speed alone does not determine performance.
-- Cache and memory behavior affect execution speed.
-- Product tiers do not specify fixed core counts.
-- Cooling and power limits influence sustained performance.
-- The best performance comparison uses the workloads you actually need to run.
+- A **GPU accelerates workloads with substantial parallelism**.
+- A GPU and a graphics card are related but different things.
+- **Shaders are programs**, executed by GPU hardware.
+- Memory capacity and memory bandwidth describe different capabilities.
+- Integrated and discrete GPUs describe integration, while gaming and workstation describe intended uses.
+- Execution-unit counts are not directly comparable across all architectures.
+- Real performance depends on the workload, software, memory, power, and cooling.
 
 ## 📝 Review Questions
 
-1. What happens during fetch, decode, and execute?
-2. How does a CPU core differ from a hardware thread?
-3. Why can two processors with similar clock speeds perform differently?
-4. What is the purpose of CPU cache?
-5. How does an ISA differ from a microarchitecture?
-6. Why do additional cores benefit some applications more than others?
+1. What makes a workload suitable for GPU acceleration?
+2. How does a GPU differ from a graphics card?
+3. What is a shader?
+4. How do integrated and discrete GPUs differ?
+5. Why does more VRAM not automatically mean higher performance?
+6. Why is comparing GPUs by core count alone misleading?
+7. How do upscaling and frame generation differ?
 
 ---
 
