@@ -114,6 +114,8 @@ This section brings together **networking devices, communication concepts, confi
 └── Packet-Tracer-Labs/
 ```
 
+📖 [**Explore Computer Networks →**](./02-Computer-Networks/README.md)
+
 ### 🧪 Cisco Packet Tracer Labs
 
 Put networking concepts into practice through simulated networks.
