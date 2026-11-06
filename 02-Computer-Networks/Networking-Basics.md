@@ -44,4 +44,4 @@ An **IP address** helps identify the packet's destination across networks. A **M
 
 **Practice:** [Build a two-PC LAN in Packet Tracer](./Packet-Tracer-Labs/01-Two-PC-LAN.md).
 
-[← Computer Networks](./README.md)
+[← Computer Networks](./README.md) · [Next: Router →](./Router.md)
