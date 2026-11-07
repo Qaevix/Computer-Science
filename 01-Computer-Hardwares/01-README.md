@@ -1,6 +1,6 @@
 # 🖥️ Computer Hardware
 
-> Understanding the physical foundations of computing — from processors and memory to servers and networking devices
+> Understanding the physical foundations of computing — from processors and memory to servers and networking devices.
 
 A collection of notes about **computer components, storage, servers, and networking devices**.
 
