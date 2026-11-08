@@ -76,7 +76,7 @@ This section brings together **networking devices, communication concepts, confi
 - **Switch** — Connects devices within a local network and forwards Ethernet frames
 - **Access Point** — Provides wireless connectivity to a network
 
-### Planned Topics
+### Topics
 
 - Networking fundamentals
 - LAN, WAN, and network topologies
@@ -95,7 +95,7 @@ This section brings together **networking devices, communication concepts, confi
 - Network security fundamentals
 - Network troubleshooting
 
-### Planned File Organization
+### File Organization
 
 ```text
 02-Computer-Networks/
