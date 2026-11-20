@@ -1,6 +1,6 @@
 # 💻 Computer Science
 
-> Exploring how computers work — from physical hardware to programming, networks, and software systems.
+> Exploring how computers work — from physical hardware to programming, networks, and software systems
 
 A growing collection of **study notes, practical examples, and hands-on exercises** covering the foundations of computer science.
 
